@@ -84,10 +84,10 @@ function refreshToken (requiredFields, entries, data, next) {
       if (err) { return next(err) }
       fetchToken({
         grant_type: 'authorization_code',
-code: 'boypFi',
-nonce: '6382503a-548f-46d7-84fd-4a06e999b4ff',
-state: '48bab06e-9014-491f-b146-3626e6a40b51',
-redirect_uri: 'http://localhost/test'
+        code: requiredFields.code,
+        state,
+        nonce,
+        redirect_uri: ''
       }, requiredFields, data, next)
     })
   } else {
