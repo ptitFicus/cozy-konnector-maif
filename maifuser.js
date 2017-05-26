@@ -2,8 +2,8 @@ const {models} = require('cozy-konnector-libs');
 //const MaifUser = module.exports = models.baseModel.createNew({'displayName':'fr.maif.maifuser'});
 
 const doctypeContrat = models.baseModel.createNew({
-  "displayName":"fr.maif.maifuser.contrat",
-  "docType": "Contract",
+  "displayName":"contrat",
+  "docType":"fr.maif.maifuser.contrat",
   "docTypeVersion": "MaifKonnector-0.0.0-draft",
   "societaire": "1234567N",
   "name": "VAM",
@@ -31,7 +31,7 @@ const doctypeContrat = models.baseModel.createNew({
 });
 
 const doctypeHome = models.baseModel.createNew({
-  "displayName":"fr.maif.maifuser.home",
+  "displayName":"home",
   "docType": "fr.maif.maifuser.home",
   "address": {
     "street": "2 BOULEVARD DES BELGES",
@@ -52,7 +52,7 @@ const doctypeHome = models.baseModel.createNew({
 });
 
 const doctypeFoyer = models.baseModel.createNew({
-  "displayName":"fr.maif.maifuser.foyer",
+  "displayName":"foyer",
   "docType": "fr.maif.maifuser.foyer",
   "name":"1-A3ZICCA",
   "address":{
@@ -85,7 +85,7 @@ const doctypeFoyer = models.baseModel.createNew({
 });
 
 const doctypeModalitesPaiement = models.baseModel.createNew({
-  "displayName":"fr.maif.maifuser.paymentterms",
+  "displayName":"paymentterms",
   "docType": "fr.maif.maifuser.paymentterms",
   "rib": {
     "bic":"SOGEFRPP",
@@ -97,7 +97,7 @@ const doctypeModalitesPaiement = models.baseModel.createNew({
 });
 
 const doctypeSinistreHabitation = models.baseModel.createNew({
-  "displayName":"fr.maif.maifuser.sinistrehabitation",
+  "displayName":"sinistrehabitation",
   "docType": "fr.maif.maifuser.sinistrehabitation",
   "docTypeVersion": "MaifKonnector-0.0.0-draft",
   "type": "Habitation",
@@ -116,7 +116,7 @@ const doctypeSinistreHabitation = models.baseModel.createNew({
 });
 
 const doctypeSinistreVehicule = models.baseModel.createNew({
-  "displayName":"fr.maif.maifuser.sinistrevehicule",
+  "displayName":"sinistrevehicule",
   "docType": "fr.maif.maifuser.sinistrevehicule",
   "docTypeVersion": "MaifKonnector-0.0.0-draft",
   "type": "Vehicule",
@@ -134,7 +134,7 @@ const doctypeSinistreVehicule = models.baseModel.createNew({
 });
 
 const doctypeSocietaire = models.baseModel.createNew({
-  "displayName":"fr.maif.maifuser.societaire",
+  "displayName":"societaire",
   "docType": "fr.maif.maifuser.societaire",
   "vendor": "maif",
   "name": {
@@ -157,6 +157,7 @@ const doctypeSocietaire = models.baseModel.createNew({
 });
 
 const doctypeTest = models.baseModel.createNew({
+  docType: "fr.maif.maifuser.societaire",
   displayName:'maifuser',
   maifuser:{}
 });
