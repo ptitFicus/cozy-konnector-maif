@@ -1,4 +1,5 @@
 {
-  "login": "login",
-  "password": "password"
+  "access_token": "dsfoidspoipidsihiuhzaoiu",
+  "code": "foo",
+  "redirectPath": "bar"
 }
